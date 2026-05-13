@@ -29,7 +29,7 @@ const DEFAULT_FORM_FIELDS = [
 
 const DEFAULT_SETTINGS = {
   namaSekolah: "SD Negeri 03 Yosorejo",
-  alamat: "Jl. Pendidikan No. 123, Kota Pelajar, Indonesia 12345",
+  alamat: "Dk. Dranan, Ds. Yosorejo, Kec. Petungkriyono, Kab. Pekalongan",
   telepon: "(021) 1234-5678",
   email: "info@sdnharapanbangsa.sch.id",
   deskripsi: "Mencetak generasi penerus bangsa yang cerdas, berakhlak mulia, dan siap menghadapi tantangan masa depan dengan pendidikan berkualitas.",
