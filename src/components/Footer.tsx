@@ -41,15 +41,15 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-3">
                 <MapPin size={18} className="text-blue-500 shrink-0 mt-0.5" />
-                <span>{settings?.alamat || 'Jl. Pendidikan No. 123, Kota Pelajar, Indonesia 12345'}</span>
+                <span>{settings?.alamat || 'Dk. Dranan, Ds. Yosorejo, Kec. Petungkriyono, Kab. Pekalongan'}</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={18} className="text-blue-500 shrink-0" />
-                <span>{settings?.telepon || '(021) 1234-5678'}</span>
+                <span>{settings?.telepon || '0856-4260-0190'}</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={18} className="text-blue-500 shrink-0" />
-                <span>{settings?.email || 'info@sdnharapanbangsa.sch.id'}</span>
+                <span>{settings?.email || 'sdn3yosorejo@gmail.com'}</span>
               </li>
             </ul>
           </div>
