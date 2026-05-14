@@ -363,7 +363,7 @@ export default function RegistrationForm() {
                 </h3>
                 <p className="text-sm text-slate-500 mb-6 flex items-center gap-2 bg-blue-50 p-3 rounded-lg border border-blue-100">
                   <AlertCircle size={16} className="text-blue-500 shrink-0" />
-                  Format file: JPG/PNG/PDF. Ukuran maksimal: 2MB per file.
+                  Format File Dokumen JPG & Ukuran Maksimal 2 MB.
                 </p>
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
