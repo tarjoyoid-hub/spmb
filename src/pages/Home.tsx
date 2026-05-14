@@ -193,7 +193,7 @@ export default function Home() {
               <div className="mb-8">
                 <h4 className="text-lg font-semibold text-slate-800 mb-3">Visi</h4>
                 <p className="text-slate-600 italic bg-white p-4 rounded-xl border border-slate-100 shadow-sm">
-                  "{settings?.visiSekolah || 'Visi sekolah belum diatur.'}"
+                  "{settings?.visiSekolah || 'Visi'}"
                 </p>
               </div>
               
