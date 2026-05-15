@@ -11,7 +11,7 @@ const iconMap = {
 };
 
 const colorClasses = {
-  blue: 'bg-blue-100 text-blue-600',
+  pink: 'bg-pink-100 text-pink-600',
   green: 'bg-green-100 text-green-600',
   purple: 'bg-purple-100 text-purple-600',
   amber: 'bg-amber-100 text-amber-600',
@@ -19,7 +19,7 @@ const colorClasses = {
 };
 
 const colorMap = {
-  FileDigit: 'blue',
+  FileDigit: 'pink',
   FileBadge: 'green',
   FileImage: 'purple',
   FileText: 'amber',
@@ -35,7 +35,7 @@ export default function Guide() {
     { id: "1", icon: "FileDigit", title: "Kartu Keluarga (KK)", description: "Asli atau fotokopi yang dilegalisir. Pastikan NIK dan nama calon siswa tercantum dengan benar." },
     { id: "2", icon: "FileBadge", title: "Akta Kelahiran", description: "Dokumen asli atau fotokopi legalisir untuk verifikasi usia dan data diri calon siswa." },
     { id: "3", icon: "FileImage", title: "Pas Foto Terbaru", description: "Pas foto berwarna ukuran 3x4 yang terbaru dengan latar belakang merah atau biru." },
-    { id: "4", icon: "FileText", title: "Dokumen SKTB (Jika Ada)", description: "Surat Keterangan Tamat Belajar (SKTB) dari jenjang pendidikan sebelumnya jika ada." }
+    { id: "4", icon: "FileText", title: "Dokumen SKTB", description: "Surat Keterangan Tamat Belajar (SKTB) dari jenjang pendidikan sebelumnya jika ada." }
   ];
   const alur = settings?.panduanAlur || [
     "Siapkan seluruh dokumen persyaratan dalam bentuk file digital (foto/scan).",
