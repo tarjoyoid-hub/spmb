@@ -34,8 +34,8 @@ export default function Guide() {
   const dokumen = settings?.panduanDokumen || [
     { id: "1", icon: "FileDigit", title: "Kartu Keluarga (KK)", description: "Asli atau fotokopi yang dilegalisir. Pastikan NIK dan nama calon siswa tercantum dengan benar." },
     { id: "2", icon: "FileBadge", title: "Akta Kelahiran", description: "Dokumen asli atau fotokopi legalisir untuk verifikasi usia dan data diri calon siswa." },
-    { id: "3", icon: "FileImage", title: "Pas Foto Terbaru", description: "Pas foto berwarna ukuran 3x4 dengan latar belakang merah atau biru." },
-    { id: "4", icon: "FileText", title: "Ijazah / SKHUN (Jika Ada)", description: "Surat Keterangan Lulus atau Ijazah dari jenjang pendidikan sebelumnya (TK/PAUD)." }
+    { id: "3", icon: "FileImage", title: "Pas Foto Terbaru", description: "Pas foto berwarna ukuran 3x4 yang terbaru dengan latar belakang merah atau biru." },
+    { id: "4", icon: "FileText", title: "Dokumen SKTB (Jika Ada)", description: "Surat Keterangan Tamat Belajar (SKTB) dari jenjang pendidikan sebelumnya jika ada." }
   ];
   const alur = settings?.panduanAlur || [
     "Siapkan seluruh dokumen persyaratan dalam bentuk file digital (foto/scan).",
