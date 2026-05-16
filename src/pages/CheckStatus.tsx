@@ -314,7 +314,7 @@ export default function CheckStatus() {
 
             {result && (
               <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="space-y-6">
-                <div className="border border-slate-200 rounded-xl p-4 bg-slate-50">
+                <div className="border border-green-200 rounded-xl p-4 bg-green-50">
                   <div className="grid grid-cols-2 gap-4 text-sm">
                     <div>
                       <span className="block text-slate-500 mb-1">No. Pendaftaran</span>
