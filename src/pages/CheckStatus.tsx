@@ -213,7 +213,7 @@ export default function CheckStatus() {
               <CheckCircle className="text-green-600" size={32} />
             </div>
             <h3 className="text-2xl font-bold text-green-800 mb-2">Selamat! Lulus Pendaftaran</h3>
-            <p className="text-green-700 mb-4">Silakan cetak bukti kelulusan dan segera lakukan daftar ulang.</p>
+            <p className="text-green-700 mb-4">Silakan cetak bukti kelulusan dan segera melakukan daftar ulang.</p>
             
             <div className="bg-white rounded-lg p-4 border border-green-100 text-left mb-4">
               {settings?.tanggalDaftarUlang && (
