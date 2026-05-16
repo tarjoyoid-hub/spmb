@@ -84,7 +84,7 @@ export default function RegistrationForm() {
     doc.setFontSize(12);
     
     let startY = 60;
-    const lineHeight = 5;
+    const lineHeight = 6;
     
     const formatDate = (dateString: string) => {
       if (!dateString) return '-';
