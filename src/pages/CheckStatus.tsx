@@ -281,7 +281,7 @@ export default function CheckStatus() {
         >
           <div className="bg-gradient-to-r from-blue-600 to-blue-800 px-8 py-8 text-white text-center">
             <h2 className="text-2xl font-bold mb-2">Cek Status Kelulusan</h2>
-            <p className="text-blue-100 text-sm">Silahkan masukkan nomor pendaftaran untuk melihat hasil seleksi SPMB.</p>
+            <p className="text-blue-100 text-sm">Silahkan masukkan nomor pendaftaran dibawah ini untuk melihat hasil seleksi oleh Panitia SPMB.</p>
           </div>
 
           <div className="p-8">
