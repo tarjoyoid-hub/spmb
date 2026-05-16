@@ -216,9 +216,8 @@ export default function CheckStatus() {
             <p className="text-green-700 mb-4">Silakan cetak bukti kelulusan dan segera lakukan daftar ulang.</p>
             
             <div className="bg-white rounded-lg p-4 border border-green-100 text-left mb-4">
-              <h4 className="font-semibold text-green-700 mb-2 text-sm">Persyaratan Daftar Ulang:</h4>
               {settings?.tanggalDaftarUlang && (
-                <p className="text-sm text-green-700 mb-2 font-medium">Tanggal Daftar Ulang: {new Date(settings.tanggalDaftarUlang).toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' })}</p>
+                <p className="text-sm text-green-700 mb-2 font-medium">Dokumen Persyaratan Pada Saat Daftar Ulang: {new Date(settings.tanggalDaftarUlang).toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' })}</p>
               )}
               <div className="text-sm text-green-700 whitespace-pre-line">
                 {settings?.persyaratanDaftarUlang || '1. Membawa Bukti Kelulusan yang dicetak\n2. Membawa Fotokopi Akta Kelahiran (2 lembar)\n3. Membawa Fotokopi Kartu Keluarga (2 lembar)\n4. Membawa Pas Foto 3x4 (4 lembar)\n5. Melakukan pembayaran administrasi awal'}
