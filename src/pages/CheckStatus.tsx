@@ -125,17 +125,17 @@ export default function CheckStatus() {
     doc.text(':', 70, currentY + lineSpacing);
     doc.text(data.namaLengkap || '-', 75, currentY + lineSpacing);
     
-    doc.text('Status', 30, currentY + lineSpacing * 2);
+    doc.text('Telah Dinyatakan', 30, currentY + lineSpacing * 2);
     doc.text(':', 70, currentY + lineSpacing * 2);
     doc.setFont('helvetica', 'bold');
     doc.setTextColor(0, 128, 0); // Green
-    doc.text('LULUS', 75, currentY + lineSpacing * 2);
+    doc.text('LULUS ATAU DITERIMA', 75, currentY + lineSpacing * 2);
     doc.setTextColor(0, 0, 0); // Reset to black
     
     // Requirements
     currentY += lineSpacing * 4;
     doc.setFont('helvetica', 'normal');
-    doc.text('Diharapkan segera melakukan daftar ulang dengan membawa persyaratan berikut:', 20, currentY);
+    doc.text('Diharapkan segera melakukan tahapan selanjutnya (Daftar Ulang) pada tanggal yang sudah ditentukan dengan membawa persyaratan berikut:', 20, currentY);
     
     currentY += lineSpacing;
     const reqText = settings?.persyaratanDaftarUlang || '1. Bukti Kelulusan ini (dicetak)\n2. Fotokopi Akta Kelahiran (2 lembar)\n3. Fotokopi Kartu Keluarga (2 lembar)\n4. Pas Foto 3x4 (4 lembar)\n5. Melakukan pembayaran administrasi awal';
