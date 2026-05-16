@@ -56,8 +56,8 @@ export default function AdminLogin() {
             <div className="mx-auto w-16 h-16 bg-slate-700/50 rounded-full flex items-center justify-center mb-4">
               <Lock className="text-blue-400" size={32} />
             </div>
-            <h2 className="text-2xl font-bold mb-2">Login Admin Sekolah</h2>
-            <p className="text-slate-300 text-sm">Pengeloaan Data Pendaftaran Peserta Didik Baru</p>
+            <h2 className="text-2xl font-bold mb-2">Login Admin SPMB</h2>
+            <p className="text-slate-300 text-sm">Pengeloaan Data Pendaftaran Murid Baru</p>
           </div>
 
           <form onSubmit={handleLogin} className="p-8 space-y-6">
