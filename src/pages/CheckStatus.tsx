@@ -108,9 +108,9 @@ export default function CheckStatus() {
     
     // Content
     doc.setFontSize(11);
-    doc.text('Berdasarkan hasil seleksi Penerimaan Peserta Didik Baru (PPDB),', 20, currentY);
+    doc.text('Berdasarkan hasil seleksi yang dilakukan oleh Panita Penerimaan Peserta Didik Baru SD Negeri 03 Yosorejo,', 20, currentY);
     currentY += 7;
-    doc.text('menyatakan bahwa:', 20, currentY);
+    doc.text(' sebagai berikut:', 20, currentY);
     currentY += 13;
     
     const lineSpacing = 8;
