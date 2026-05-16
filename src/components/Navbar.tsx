@@ -15,7 +15,7 @@ export default function Navbar() {
     { name: 'Panduan Pendaftaran', path: '/panduan' },
     { name: 'Formulir Pendaftaran', path: '/daftar' },
     { name: 'Cek Kelulusan', path: '/cek-kelulusan' },
-    { name: 'Admin Sekolah', path: '/admin' },
+    { name: 'Admin SPMB', path: '/admin' },
   ];
 
   return (
