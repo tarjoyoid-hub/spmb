@@ -34,7 +34,7 @@ export default function Footer() {
               <li><Link to="/panduan" className="hover:text-blue-400 transition-colors">Panduan Pendaftaran</Link></li>
               <li><Link to="/daftar" className="hover:text-blue-400 transition-colors">Formulir Pendaftaran</Link></li>
               <li><Link to="/cek-kelulusan" className="hover:text-blue-400 transition-colors">Cek Kelulusan</Link></li>
-              <li><Link to="/admin" className="hover:text-blue-400 transition-colors">Login Admin Sekolah</Link></li>
+              <li><Link to="/admin" className="hover:text-blue-400 transition-colors">Admin Sekolah</Link></li>
             </ul>
           </div>
           
