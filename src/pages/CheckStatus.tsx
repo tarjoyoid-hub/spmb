@@ -74,7 +74,7 @@ export default function CheckStatus() {
         console.error("Error adding kop surat", e);
         doc.setFontSize(16);
         doc.setFont('helvetica', 'bold');
-        doc.text('BUKTI KELULUSAN PPDB', 105, currentY, { align: 'center' });
+        doc.text('BUKTI KELULUSAN PENDAFTARAN PESERTA DIDIK BARU', 105, currentY, { align: 'center' });
         currentY += 8;
         doc.setFontSize(12);
         doc.setFont('helvetica', 'normal');
@@ -91,7 +91,7 @@ export default function CheckStatus() {
     } else {
       doc.setFontSize(16);
       doc.setFont('helvetica', 'bold');
-      doc.text('BUKTI KELULUSAN PPDB', 105, currentY, { align: 'center' });
+      doc.text('BUKTI KELULUSAN PENDAFTARAN PESERTA DIDIK BARU', 105, currentY, { align: 'center' });
       currentY += 8;
       doc.setFontSize(12);
       doc.setFont('helvetica', 'normal');
