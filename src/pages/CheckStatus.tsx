@@ -58,7 +58,7 @@ export default function CheckStatus() {
         
         doc.setFontSize(16);
         doc.setFont('helvetica', 'bold');
-        doc.text('BUKTI KELULUSAN PENDAFTARAN PESERTA DIDIK BARU', 105, currentY, { align: 'center' });
+        doc.text('BUKTI KELULUSAN PENDAFTARAN MURID BARU', 105, currentY, { align: 'center' });
         currentY += 8;
         doc.setFontSize(12);
         doc.setFont('helvetica', 'normal');
@@ -74,7 +74,7 @@ export default function CheckStatus() {
         console.error("Error adding kop surat", e);
         doc.setFontSize(16);
         doc.setFont('helvetica', 'bold');
-        doc.text('BUKTI KELULUSAN PENDAFTARAN PESERTA DIDIK BARU', 105, currentY, { align: 'center' });
+        doc.text('BUKTI KELULUSAN PENDAFTARAN MURID BARU', 105, currentY, { align: 'center' });
         currentY += 8;
         doc.setFontSize(12);
         doc.setFont('helvetica', 'normal');
@@ -91,7 +91,7 @@ export default function CheckStatus() {
     } else {
       doc.setFontSize(16);
       doc.setFont('helvetica', 'bold');
-      doc.text('BUKTI KELULUSAN PENDAFTARAN PESERTA DIDIK BARU', 105, currentY, { align: 'center' });
+      doc.text('BUKTI KELULUSAN PENDAFTARAN MURID BARU', 105, currentY, { align: 'center' });
       currentY += 8;
       doc.setFontSize(12);
       doc.setFont('helvetica', 'normal');
@@ -108,7 +108,7 @@ export default function CheckStatus() {
     
     // Content
     doc.setFontSize(11);
-    doc.text('Berdasarkan seleksi yang dilakukan oleh Panita Penerimaan Peserta Didik Baru,', 20, currentY);
+    doc.text('Berdasarkan seleksi yang dilakukan oleh Panita Sistem Penerimaan Murid Baru (SPMB),', 20, currentY);
     currentY += 7;
     doc.text('memutuskan sebagai berikut:', 20, currentY);
     currentY += 13;
