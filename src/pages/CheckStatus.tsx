@@ -239,8 +239,8 @@ export default function CheckStatus() {
             <div className="mx-auto w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-4">
               <XCircle className="text-red-600" size={32} />
             </div>
-            <h3 className="text-2xl font-bold text-red-800 mb-2">Mohon Maaf, Anda Tidak Lulus</h3>
-            <p className="text-red-700 mb-4">Tetap semangat dan jangan menyerah.</p>
+            <h3 className="text-2xl font-bold text-red-800 mb-2">Mohon Maaf Tidak Lulus</h3>
+            <p className="text-red-700 mb-4">Tetap Semangat dan Jangan Menyerah.</p>
             {data?.alasanPenolakan && (
               <div className="bg-white rounded-lg p-4 border border-red-100 text-left">
                 <h4 className="font-semibold text-red-800 mb-1 text-sm">Alasan:</h4>
