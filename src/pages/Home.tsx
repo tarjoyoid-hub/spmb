@@ -95,7 +95,7 @@ export default function Home() {
               )}
               <a
                 href="#alur"
-                className="inline-flex justify-center items-center gap-2 bg-red-200 hover:bg-slate-50 text-slate-700 border border-slate-200 px-8 py-4 rounded-full text-lg font-semibold transition-all shadow-sm hover:shadow-md"
+                className="inline-flex justify-center items-center gap-2 bg-white hover:bg-slate-50 text-slate-700 border border-slate-200 px-8 py-4 rounded-full text-lg font-semibold transition-all shadow-sm hover:shadow-md"
               >
                 Lihat Alur PPDB
               </a>
