@@ -98,8 +98,8 @@ export default function RegistrationForm() {
     
     doc.setFont("helvetica", "bold");
     doc.text("No. Pendaftaran", 20, startY);
-    doc.text(":", 80, startY);
-    doc.text(noPendaftaran, 85, startY);
+    doc.text(":", 70, startY);
+    doc.text(noPendaftaran, 75, startY);
     startY += lineHeight;
 
     doc.setFont("helvetica", "normal");
