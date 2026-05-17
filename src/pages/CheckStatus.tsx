@@ -60,10 +60,7 @@ export default function CheckStatus() {
         doc.setFont('helvetica', 'bold');
         doc.text('SURAT KETERANGAN', 105, currentY, { align: 'center' });
         currentY += 8;
-        doc.setFontSize(12);
-        doc.setFont('helvetica', 'normal');
-        doc.text(`Tahun Ajaran ${new Date().getFullYear()}/${new Date().getFullYear() + 1}`, 105, currentY, { align: 'center' });
-        currentY += 6;
+        
         if (settings?.nomorSurat) {
           doc.setFontSize(11);
           doc.text(`Nomor: ${settings.nomorSurat}`, 105, currentY, { align: 'center' });
@@ -76,10 +73,6 @@ export default function CheckStatus() {
         doc.setFont('helvetica', 'bold');
         doc.text('SURAT KETERANGAN', 105, currentY, { align: 'center' });
         currentY += 8;
-        doc.setFontSize(12);
-        doc.setFont('helvetica', 'normal');
-        doc.text(`Tahun Ajaran ${new Date().getFullYear()}/${new Date().getFullYear() + 1}`, 105, currentY, { align: 'center' });
-        currentY += 6;
         if (settings?.nomorSurat) {
           doc.setFontSize(11);
           doc.text(`Nomor: ${settings.nomorSurat}`, 105, currentY, { align: 'center' });
