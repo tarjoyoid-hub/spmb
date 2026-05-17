@@ -56,7 +56,7 @@ export default function CheckStatus() {
         doc.line(20, currentY, 190, currentY);
         currentY += 10;
         
-        doc.setFontSize(16);
+        doc.setFontSize(12);
         doc.setFont('helvetica', 'bold');
         doc.text('SURAT KETERANGAN', 105, currentY, { align: 'center' });
         currentY += 8;
@@ -72,7 +72,7 @@ export default function CheckStatus() {
         currentY += 4;
       } catch (e) {
         console.error("Error adding kop surat", e);
-        doc.setFontSize(14);
+        doc.setFontSize(12);
         doc.setFont('helvetica', 'bold');
         doc.text('SURAT KETERANGAN', 105, currentY, { align: 'center' });
         currentY += 8;
