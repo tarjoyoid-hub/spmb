@@ -46,7 +46,7 @@ export default function Home() {
             >
               <span className="relative flex h-3 w-3">
                 {!isClosed && <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>}
-                <span className={`relative inline-flex rounded-full h-3 w-3 ${isClosed ? 'bg-white' : 'bg-white'}`}></span>
+                <span className={`relative inline-flex rounded-full h-3 w-3 ${isClosed ? 'bg-red-500' : 'bg-blue-500'}`}></span>
               </span>
               {isClosed ? `Mohon Maaf, SPMB ${new Date().getFullYear()} Telah Ditutup` : `Selamat Datang, SPMB ${new Date().getFullYear()} Telah Dibuka`}
             </motion.div>
