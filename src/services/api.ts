@@ -61,7 +61,7 @@ export interface RegistrationData {
 export interface AdminData extends RegistrationData {
   Timestamp: string;
   'No Pendaftaran': string;
-  Status: 'Proses' | 'Diterima' | 'Ditolak';
+  Status: 'Proses' | 'Lulus' | 'Tidak Lulus';
   'Alasan Penolakan'?: string;
 }
 
