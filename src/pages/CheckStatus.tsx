@@ -72,7 +72,7 @@ export default function CheckStatus() {
         currentY += 4;
       } catch (e) {
         console.error("Error adding kop surat", e);
-        doc.setFontSize(16);
+        doc.setFontSize(14);
         doc.setFont('helvetica', 'bold');
         doc.text('SURAT KETERANGAN', 105, currentY, { align: 'center' });
         currentY += 8;
@@ -89,9 +89,9 @@ export default function CheckStatus() {
         currentY += 10;
       }
     } else {
-      doc.setFontSize(16);
+      doc.setFontSize(14);
       doc.setFont('helvetica', 'bold');
-      doc.text('LULUS PENDAFTARAN MURID BARU', 105, currentY, { align: 'center' });
+      doc.text('SURAT KETERANGAN', 105, currentY, { align: 'center' });
       currentY += 8;
       doc.setFontSize(12);
       doc.setFont('helvetica', 'normal');
