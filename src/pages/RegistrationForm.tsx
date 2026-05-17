@@ -69,7 +69,7 @@ export default function RegistrationForm() {
     const doc = new jsPDF();
     
     // Header
-    doc.setFillColor(37, 99, 235); // blue-200
+    doc.setFillColor(37, 99, 235); // red-300
     doc.rect(0, 0, 210, 40, 'F');
     doc.setTextColor(255, 255, 255);
     doc.setFontSize(22);
