@@ -77,13 +77,13 @@ export default function RegistrationForm() {
     doc.text("KARTU PENDAFTARAN MURID BARU", 105, 20, { align: "center" });
     doc.setFontSize(18);
     doc.setFont("helvetica", "bold");
-    doc.text(settings?.namaSekolah || "SD NEGERI 03 YOSOREJO", 105, 30, { align: "center" });
+    doc.text(settings?.namaSekolah || "SDN 03 YOSOREJO", 105, 30, { align: "center" });
 
     // Content
     doc.setTextColor(0, 0, 0);
     doc.setFontSize(12);
     
-    let startY = 50;
+    let startY = 60;
     const lineHeight = 6;
     
     const formatDate = (dateString: string) => {
@@ -95,6 +95,44 @@ export default function RegistrationForm() {
       const year = date.getFullYear();
       return `${day}/${month}/${year}`;
     };
+    
+    // Tambahkan Pas Foto 3x4 di kanan atas
+    const photoWidth = 28; // Lebar foto 3x4 dalam mm (3cm)
+    const photoHeight = 37; // Tinggi foto 3x4 dalam mm (3.7cm)
+    const photoX = 210 - photoWidth - 15; // Posisi dari kanan
+    const photoY = 50; // Posisi dari atas
+    
+    // Buat border untuk foto
+    doc.setDrawColor(100, 100, 100);
+    doc.setLineWidth(0.5);
+    doc.rect(photoX, photoY, photoWidth, photoHeight);
+    
+    // Tambahkan foto jika ada
+    if (formData['Pas Foto 3x4']) {
+      try {
+        doc.addImage(
+          formData['Pas Foto 3x4'],
+          'JPEG',
+          photoX,
+          photoY,
+          photoWidth,
+          photoHeight
+        );
+      } catch (error) {
+        console.error('Gagal menambahkan foto:', error);
+        // Jika format foto tidak support, buat placeholder
+        doc.setFillColor(230, 230, 230);
+        doc.rect(photoX, photoY, photoWidth, photoHeight, 'F');
+        doc.setFontSize(8);
+        doc.text('Foto tidak tersedia', photoX + photoWidth / 2, photoY + photoHeight / 2, { align: 'center' });
+      }
+    } else {
+      // Jika tidak ada foto, tampilkan placeholder
+      doc.setFillColor(240, 240, 240);
+      doc.rect(photoX, photoY, photoWidth, photoHeight, 'F');
+      doc.setFontSize(8);
+      doc.text('Pas Foto 3x4', photoX + photoWidth / 2, photoY + photoHeight / 2, { align: 'center' });
+    }
     
     doc.setFont("helvetica", "bold");
     doc.text("No. Pendaftaran", 20, startY);
@@ -392,7 +430,7 @@ export default function RegistrationForm() {
                 </div>
                 <div className="text-sm text-slate-700">
                   <span className="font-semibold block mb-1">Pernyataan Kebenaran Data</span>
-                  Saya menyatakan bahwa data yang saya isikan dalam formulir pendaftaran ini adalah benar dan dapat dipertanggungjawabkan. Apabila di kemudian hari ditemukan data yang tidak sesuai, saya bersedia menerima sanksi sesuai ketentuan yang berlaku.
+                  Saya menyatakan bahwa data yang saya isikan dalam formulir pendaftaran ini adalah benar dan dapat dipertanggungjawabkan. Apabila di kemudian hari ditemukan data yang tidak sesuai, sa[...]
                 </div>
               </label>
             </div>
@@ -401,7 +439,7 @@ export default function RegistrationForm() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all shadow-md hover:shadow-lg disabled:opacity-70 flex items-center justify-center"
+                className="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all shadow-md hover:shadow-lg disabled:opacity-70 flex items-center justify[...]
               >
                 {isSubmitting ? (
                   <>
