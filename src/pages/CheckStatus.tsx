@@ -108,9 +108,9 @@ export default function CheckStatus() {
     
     // Content
     doc.setFontSize(11);
-    doc.text('Berdasarkan seleksi yang dilakukan oleh Panita Sistem Penerimaan Murid Baru (SPMB),', 20, currentY);
+    doc.text('Berdasarkan hasil seleksi yang dilakukan oleh Panita SPMB SD Negeri 03 Yosorejo', 20, currentY);
     currentY += 7;
-    doc.text('memutuskan sebagai berikut:', 20, currentY);
+    doc.text('telah memutuskan sebagai berikut:', 20, currentY);
     currentY += 13;
     
     const lineSpacing = 8;
@@ -129,7 +129,7 @@ export default function CheckStatus() {
     doc.text(':', 70, currentY + lineSpacing * 2);
     doc.setFont('helvetica', 'bold');
     doc.setTextColor(0, 128, 0); // Green
-    doc.text('Diterima Di SD Negeri 03 Yosorejo', 75, currentY + lineSpacing * 2);
+    doc.text('DITERIMA SEBAGAI MURID BARU', 75, currentY + lineSpacing * 2);
     doc.setTextColor(0, 0, 0); // Reset to black
     
     // Requirements
