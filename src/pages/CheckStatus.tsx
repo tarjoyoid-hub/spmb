@@ -140,8 +140,7 @@ export default function CheckStatus() {
     currentY += lineSpacing;
     const reqText = settings?.persyaratanDaftarUlang || '1. Bukti Kelulusan ini (dicetak)\n2. Fotokopi Akta Kelahiran (2 lembar)\n3. Fotokopi Kartu Keluarga (2 lembar)\n4. Pas Foto 3x4 (4 lembar)\n5. Melakukan pembayaran administrasi awal';
     const splitReq = doc.splitTextToSize(reqText, 160);
-    doc.text(splitReq, 25, currentY);
-    
+    doc.text(splitReq, 25, currentY, { lineHeightFactor: 1.5 }); // 1.5 = 1.5x normal spacing
     currentY += splitReq.length * 6 + 20;
 
     // Signature Area
