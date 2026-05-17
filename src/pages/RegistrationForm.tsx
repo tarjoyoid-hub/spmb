@@ -77,7 +77,7 @@ export default function RegistrationForm() {
     doc.text("KARTU PENDAFTARAN MURID BARU", 105, 20, { align: "center" });
     doc.setFontSize(18);
     doc.setFont("helvetica", "bold");
-    doc.text(settings?.namaSekolah || "SD NEGERI 03 YOSOREJO", 105, 30, { align: "center" });
+    doc.text(settings?.namaSekolah || "SDN 03 YOSOREJO", 105, 30, { align: "center" });
 
     // Content
     doc.setTextColor(0, 0, 0);
@@ -123,7 +123,7 @@ export default function RegistrationForm() {
     // Footer
     doc.setFontSize(10);
     doc.setTextColor(100, 100, 100);
-    doc.text("Simpan kartu pendaftaran ini untuk mengecek status kelulusan.", 105, 280, { align: "center" });
+    doc.text("Simpan kartu pendaftaran ini guna untuk mengecek status kelulusan.", 105, 280, { align: "center" });
     
     doc.save(`Kartu_Pendaftaran_${noPendaftaran}.pdf`);
   };
