@@ -69,14 +69,14 @@ export default function RegistrationForm() {
     const doc = new jsPDF();
     
     // Header
-    doc.setFillColor(249, 115, 22); // RGB untuk orange-600
+    doc.setFillColor(249, 115, 22); // RGB untuk orange-300
     doc.rect(0, 0, 210, 40, 'F');
     doc.setTextColor(255, 255, 255);
-    doc.setFontSize(22);
+    doc.setFontSize(18);
     doc.setFont("helvetica", "bold");
     doc.text("KARTU PENDAFTARAN MURID BARU", 105, 20, { align: "center" });
-    doc.setFontSize(14);
-    doc.setFont("helvetica", "normal");
+    doc.setFontSize(18);
+    doc.setFont("helvetica", "bold");
     doc.text(settings?.namaSekolah || "SD Negeri 03 Yosorejo", 105, 30, { align: "center" });
 
     // Content
