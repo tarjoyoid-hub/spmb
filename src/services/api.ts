@@ -152,7 +152,7 @@ const getInitialMockData = (): AdminData[] => {
   return [
     {
       Timestamp: new Date().toISOString(),
-      'No Pendaftaran': "SPMB-2024-001",
+      'No Pendaftaran': "SPMB-2026-001",
       'Nama Lengkap': "Budi Santoso",
       'NIK': "1234567890123456",
       'Tempat Lahir': "Jakarta",
