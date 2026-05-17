@@ -237,7 +237,7 @@ function handleRegistration(data) {
       }
     }
   }
-  const noPendaftaran = `PPDB-${year}-${String(nextId).padStart(3, '0')}`;
+  const noPendaftaran = `SPMB-${year}-${String(nextId).padStart(3, '0')}`;
   
   const folder = getOrCreateFolder(FOLDER_NAME);
   const rowData = new Array(headers.length).fill("");
