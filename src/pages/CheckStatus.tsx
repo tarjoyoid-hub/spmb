@@ -58,7 +58,7 @@ export default function CheckStatus() {
         
         doc.setFontSize(16);
         doc.setFont('helvetica', 'bold');
-        doc.text('BUKTI KETERANGAN LULUS PENDAFTARAN MURID BARU', 105, currentY, { align: 'center' });
+        doc.text('SURAT KETERANGAN', 105, currentY, { align: 'center' });
         currentY += 8;
         doc.setFontSize(12);
         doc.setFont('helvetica', 'normal');
@@ -74,7 +74,7 @@ export default function CheckStatus() {
         console.error("Error adding kop surat", e);
         doc.setFontSize(16);
         doc.setFont('helvetica', 'bold');
-        doc.text('LULUS PENDAFTARAN MURID BARU', 105, currentY, { align: 'center' });
+        doc.text('SURAT KETERANGAN', 105, currentY, { align: 'center' });
         currentY += 8;
         doc.setFontSize(12);
         doc.setFont('helvetica', 'normal');
