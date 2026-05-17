@@ -69,12 +69,12 @@ export default function RegistrationForm() {
     const doc = new jsPDF();
     
     // Header
-    doc.setFillColor(37, 99, 235); // blue-600
+    doc.setFillColor(37, 99, 235); // blue-200
     doc.rect(0, 0, 210, 40, 'F');
     doc.setTextColor(255, 255, 255);
     doc.setFontSize(22);
     doc.setFont("helvetica", "bold");
-    doc.text("BUKTI PENDAFTARAN PPDB", 105, 20, { align: "center" });
+    doc.text("BUKTI PENDAFTARAN MURID BARU", 105, 20, { align: "center" });
     doc.setFontSize(14);
     doc.setFont("helvetica", "normal");
     doc.text(settings?.namaSekolah || "SD Negeri 03 Yosorejo", 105, 30, { align: "center" });
