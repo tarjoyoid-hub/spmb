@@ -152,7 +152,7 @@ const getInitialMockData = (): AdminData[] => {
   return [
     {
       Timestamp: new Date().toISOString(),
-      'No Pendaftaran': "PPDB-2024-001",
+      'No Pendaftaran': "SPMB-2024-001",
       'Nama Lengkap': "Budi Santoso",
       'NIK': "1234567890123456",
       'Tempat Lahir': "Jakarta",
@@ -230,7 +230,7 @@ export const submitRegistration = async (data: RegistrationData) => {
     const newEntry: AdminData = {
       ...data,
       Timestamp: new Date().toISOString(),
-      'No Pendaftaran': `PPDB-${year}-${String(mockData.length + 1).padStart(3, '0')}`,
+      'No Pendaftaran': `SPMB-${year}-${String(mockData.length + 1).padStart(3, '0')}`,
       Status: 'Proses'
     };
     saveMockData([...mockData, newEntry]);
