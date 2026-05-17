@@ -69,12 +69,12 @@ export default function RegistrationForm() {
     const doc = new jsPDF();
     
     // Header
-    doc.setFillColor(37, 99, 235); // red-300
+    doc.setFillColor(37, 99, 235); // blue-600
     doc.rect(0, 0, 210, 40, 'F');
     doc.setTextColor(255, 255, 255);
     doc.setFontSize(22);
     doc.setFont("helvetica", "bold");
-    doc.text("BUKTI PENDAFTARAN MURID BARU", 105, 20, { align: "center" });
+    doc.text("KARTU PENDAFTARAN MURID BARU", 105, 20, { align: "center" });
     doc.setFontSize(14);
     doc.setFont("helvetica", "normal");
     doc.text(settings?.namaSekolah || "SD Negeri 03 Yosorejo", 105, 30, { align: "center" });
@@ -123,9 +123,9 @@ export default function RegistrationForm() {
     // Footer
     doc.setFontSize(10);
     doc.setTextColor(100, 100, 100);
-    doc.text("Simpan bukti pendaftaran ini untuk mengecek status kelulusan.", 105, 280, { align: "center" });
+    doc.text("Simpan kartu pendaftaran ini untuk mengecek status kelulusan.", 105, 280, { align: "center" });
     
-    doc.save(`Bukti_Pendaftaran_${noPendaftaran}.pdf`);
+    doc.save(`Kartu_Pendaftaran_${noPendaftaran}.pdf`);
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -174,7 +174,7 @@ export default function RegistrationForm() {
           title: 'Pendaftaran Berhasil!',
           html: `Nomor Pendaftaran Anda:<br><b style="font-size: 1.5rem; color: #2563eb;">${response.noPendaftaran}</b><br><br>Simpan nomor ini untuk mengecek status kelulusan.`,
           confirmButtonColor: '#3b82f6',
-          confirmButtonText: 'Unduh Bukti Pendaftaran',
+          confirmButtonText: 'Unduh Kartu Pendaftaran',
           showCancelButton: true,
           cancelButtonText: 'Tutup',
           allowOutsideClick: false
