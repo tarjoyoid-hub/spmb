@@ -108,9 +108,9 @@ export default function CheckStatus() {
     
     // Content
     doc.setFontSize(11);
-    doc.text('Berdasarkan hasil seleksi yang dilakukan oleh Panita SPMB SD Negeri 03 Yosorejo', 20, currentY);
+    doc.text('Berdasarkan hasil seleksi yang dilakukan oleh Panita SPMB SD Negeri 03 Yosorejo,', 20, currentY);
     currentY += 7;
-    doc.text('telah memutuskan sebagai berikut:', 20, currentY);
+    doc.text('Kami telah memutuskan sebagai berikut:', 20, currentY);
     currentY += 13;
     
     const lineSpacing = 8;
@@ -135,7 +135,7 @@ export default function CheckStatus() {
     // Requirements
     currentY += lineSpacing * 4;
     doc.setFont('helvetica', 'normal');
-    doc.text('Adapun dokumen persyaratan yang harus dibawa pada saat Daftar Ulang adalah berikut:', 20, currentY);
+    doc.text('Adapun dokumen persyaratan yang harus dibawa saat daftar ulang adalah berikut:', 20, currentY);
     
     currentY += lineSpacing;
     const reqText = settings?.persyaratanDaftarUlang || '1. Bukti Kelulusan ini (dicetak)\n2. Fotokopi Akta Kelahiran (2 lembar)\n3. Fotokopi Kartu Keluarga (2 lembar)\n4. Pas Foto 3x4 (4 lembar)\n5. Melakukan pembayaran administrasi awal';
