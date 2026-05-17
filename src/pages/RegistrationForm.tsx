@@ -77,7 +77,7 @@ export default function RegistrationForm() {
     doc.text("KARTU PENDAFTARAN MURID BARU", 105, 20, { align: "center" });
     doc.setFontSize(18);
     doc.setFont("helvetica", "bold");
-    doc.text(settings?.namaSekolah || "SDN 03 YOSOREJO", 105, 30, { align: "center" });
+    doc.text(settings?.namaSekolah || "SD NEGERI 03 YOSOREJO", 105, 30, { align: "center" });
 
     // Content
     doc.setTextColor(0, 0, 0);
@@ -98,8 +98,8 @@ export default function RegistrationForm() {
     
     doc.setFont("helvetica", "bold");
     doc.text("No. Pendaftaran", 20, startY);
-    doc.text(":", 70, startY);
-    doc.text(noPendaftaran, 75, startY);
+    doc.text(":", 80, startY);
+    doc.text(noPendaftaran, 85, startY);
     startY += lineHeight;
 
     doc.setFont("helvetica", "normal");
