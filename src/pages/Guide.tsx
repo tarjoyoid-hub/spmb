@@ -62,7 +62,7 @@ export default function Guide() {
           <div className="p-8">
             <div className="mb-10">
               <h2 className="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
-                <FileText className="text-blue-600" />
+                <CheckCircle2 className="text-green-600" />
                 Dokumen yang Harus Disiapkan
               </h2>
               {peringatan && (
