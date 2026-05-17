@@ -54,7 +54,7 @@ export default function Guide() {
           animate={{ opacity: 1, y: 0 }}
           className="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden"
         >
-          <div className="bg-blue-600 p-8 text-white">
+          <div className="bg-blue-600 p-8 text-white text-center">
             <h1 className="text-3xl font-bold mb-2">{judul}</h1>
             <p className="text-blue-100">{deskripsi}</p>
           </div>
