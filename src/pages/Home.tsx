@@ -71,36 +71,7 @@ export default function Home() {
             >
               Bergabunglah bersama {settings?.namaSekolah || 'SD Negeri 03 Yosorejo'}. Kami berkomitmen memberikan pendidikan dasar terbaik dengan fasilitas modern dan tenaga pendidik profesional.
             </motion.p>
-            
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              className="flex flex-col sm:flex-row gap-4 justify-center"
-            >
-              {isClosed ? (
-                <button
-                  disabled
-                  className="inline-flex justify-center items-center gap-2 bg-slate-400 text-white px-8 py-4 rounded-full text-lg font-semibold cursor-not-allowed shadow-sm"
-                >
-                  <AlertCircle size={20} /> Pendaftaran Ditutup
-                </button>
-              ) : (
-                <Link
-                  to="/daftar"
-                  className="inline-flex justify-center items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all shadow-lg hover:shadow-xl hover:-translate-y-1"
-                >
-                  Daftar Sekarang <ChevronRight size={20} />
-                </Link>
-              )}
-              <a
-                href="#alur"
-                className="inline-flex justify-center items-center gap-2 bg-white hover:bg-slate-50 text-slate-700 border border-slate-200 px-8 py-4 rounded-full text-sm font-semibold transition-all shadow-sm hover:shadow-md"
-              >
-                Lihat Alur Pendaftaran
-              </a>
-            </motion.div>
-          </div>
+           </div>
         </div>
       </section>
 
