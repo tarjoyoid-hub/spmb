@@ -457,7 +457,7 @@ export default function RegistrationForm() {
                     Memproses...
                   </>
                 ) : (
-                  'Kirim Pendaftaran'
+                  'Kirim Formulir Pendaftaran'
                 )}
               </button>
             </div>
