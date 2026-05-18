@@ -95,7 +95,7 @@ export default function Home() {
               )}
               <a
                 href="#alur"
-                className="inline-flex justify-center items-center gap-2 bg-white hover:bg-slate-50 text-slate-700 border border-slate-200 px-3 py-2 rounded-full text-sm font-semibold transition-all shadow-sm hover:shadow-md"
+                className="inline-flex justify-center items-center gap-2 bg-white hover:bg-slate-50 text-slate-700 border border-slate-200 px-3 py-1 rounded-full text-sm font-semibold transition-all shadow-sm hover:shadow-md"
               >
                 Lihat Alur Pendaftaran
               </a>
