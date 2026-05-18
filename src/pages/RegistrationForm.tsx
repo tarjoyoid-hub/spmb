@@ -98,13 +98,13 @@ export default function RegistrationForm() {
     
     // ===== TAMBAHKAN PAS FOTO 3x4 DI KANAN ATAS =====
     const photoWidth = 38; // Lebar foto 3x4 (3cm)
-    const photoHeight = 47; // Tinggi foto 3x4 (3.7cm)
+    const photoHeight = 50; // Tinggi foto 3x4 (3.7cm)
     const photoX = 210 - photoWidth - 10; // Posisi dari kanan dengan margin 10mm
     const photoY = 50; // Posisi dari atas
     
     // Buat border untuk foto
     doc.setDrawColor(100, 100, 100);
-    doc.setLineWidth(0.5);
+    doc.setLineWidth(1);
     doc.rect(photoX, photoY, photoWidth, photoHeight);
     
     // Cari field foto dari form settings (gunakan label atau id)
